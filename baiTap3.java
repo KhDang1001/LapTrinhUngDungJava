@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lap1;
+package Lap2;
 
 import java.util.Scanner;
 
@@ -13,22 +13,15 @@ import java.util.Scanner;
  */
 public class baiTap3 {
     public static void main(String[] args){
-        int canh;
-        
-        Scanner scanner = new Scanner(System.in); 
-        System.out.print("Nhập chiều dài hình hộp chữ nhật: ");
-        float fChieuDai = scanner.nextFloat();
-        
-        System.out.print("Nhập chiều rộng hình hộp chữ nhật: ");
-        float fChieuRong = scanner.nextFloat();
-        
-        System.out.print("Nhập chiều cao hình hộp chữ nhật: ");
-        float fChieuCao = scanner.nextFloat();
-        
-        float TheTich;
-        TheTich = fChieuDai * fChieuRong *fChieuCao;
-        System.out.print("Thể tích hình hộp chữ nhật là: " +TheTich);
-        
+        Scanner sc = new Scanner(System.in);
+        double soDien;
+        System.out.println("Số Điện là:");
+        soDien = sc.nextDouble();
+        if(soDien<50){
+            System.out.println("So tien: " +(soDien*1000));
+        }else{
+            System.out.println("So tien: "+((50*1000)+((soDien-50)*1200)));
+        }
     }
     
 }
